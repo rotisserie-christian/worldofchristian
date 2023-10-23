@@ -1,12 +1,12 @@
 import React from 'react';
-import Home from './components/Home';
+import RouteSwitch from './RouteSwitch';
 
 function App() {
   return (
     <>
     <div 
     className="app">
-      <Home />
+      <RouteSwitch />
     </div>
     </>
   );

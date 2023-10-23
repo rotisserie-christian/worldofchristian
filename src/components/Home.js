@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { FaAngleDoubleRight, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Nav from './Nav';
 import '@lottiefiles/lottie-player';
@@ -133,14 +134,23 @@ const Home = () => {
                         <p className='text-lg font-base text-left mt-5'
                         >Firebase</p>
                       </div>
-
-                      <button
-                      className='btn btn-neutral mt-20'
-                      >live demo <FaAngleDoubleRight /></button>
-
-                      <button
-                      className='btn btn-neutral mt-2'
-                      >read more <FaAngleDoubleRight /></button>
+                      
+                      <a
+                      href='https://demo.tavernstack.com'
+                      alt='link to demo'
+                      target='_blank'
+                      rel="noreferrer"
+                      >
+                        <button
+                        className='btn btn-neutral mt-20'
+                        >live demo <FaAngleDoubleRight /></button>
+                      </a>
+                      
+                      <Link to='/tavernstack'>
+                        <button
+                        className='btn btn-neutral mt-2'
+                        >read more <FaAngleDoubleRight /></button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -180,13 +190,22 @@ const Home = () => {
                         >Tailwind</p>
                       </div>
 
-                      <button
-                      className='btn btn-neutral mt-28'
-                      >live site <FaAngleDoubleRight /></button>
+                      <a
+                      href='https://neuronotes.netlify.app'
+                      alt='link to neuronotes'
+                      target='_blank'
+                      rel="noreferrer"
+                      >
+                        <button
+                        className='btn btn-neutral mt-28'
+                        >live site <FaAngleDoubleRight /></button>
+                      </a>
 
-                      <button
-                      className='btn btn-neutral mt-2'
-                      >read more <FaAngleDoubleRight /></button>
+                      <Link to='/neuronotes'>
+                        <button
+                        className='btn btn-neutral mt-2'
+                        >read more <FaAngleDoubleRight /></button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -231,13 +250,22 @@ const Home = () => {
                         >Tailwind</p>
                       </div>
 
-                      <button
-                      className='btn btn-neutral mt-28'
-                      >live site <FaAngleDoubleRight /></button>
+                      <a
+                      href='https://cheetahmode.netlify.app'
+                      alt='link to cheetahmode'
+                      target='_blank'
+                      rel="noreferrer"
+                      >
+                        <button
+                        className='btn btn-neutral mt-28'
+                        >live site <FaAngleDoubleRight /></button>
+                      </a>
 
-                      <button
-                      className='btn btn-neutral mt-2'
-                      >read more <FaAngleDoubleRight /></button>
+                      <Link to='/cheetahmode'>
+                        <button
+                        className='btn btn-neutral mt-2'
+                        >read more <FaAngleDoubleRight /></button>
+                      </Link>
                     </div>
                   </div>
                 </div>
