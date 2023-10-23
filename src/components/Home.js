@@ -5,6 +5,8 @@ import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
 import screen from '../img/screen.png';
+import screenneronotes from '../img/screenneuronotes.png';
+import screencheetahmode from '../img/screencheetahmode.png'
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -84,11 +86,13 @@ const Home = () => {
         </div>
 
         {/* projects */}
-        <div
-        ref={scrollRef}>
+        <div>
           {/* first two */}
-          <div className='flex item-center justify-center my-8'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl'>
+          <div 
+          className='flex item-center justify-center my-8'
+          ref={scrollRef}
+          >
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-40 w-full max-w-5xl'>
               <div 
               className='bg-neutral-focus rounded-xl p-4'>
                 <div 
@@ -155,7 +159,7 @@ const Home = () => {
                   <div 
                   className='flex flex-row mt-4'>
                     <img
-                    src={screen}
+                    src={screenneronotes}
                     alt='app screenshot'
                     className='max-w-[50%]'
                     />
@@ -206,7 +210,7 @@ const Home = () => {
                   <div 
                   className='flex flex-row mt-4'>
                     <img
-                    src={screen}
+                    src={screencheetahmode}
                     alt='app screenshot'
                     className='max-w-[50%]'
                     />
