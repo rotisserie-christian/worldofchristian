@@ -2,24 +2,25 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Nav from './Nav';
 import '@lottiefiles/lottie-player';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <>
     <Nav />
 
-    <div className='flex items-center justify-center mb-20'>
+    <div className='flex items-center justify-center'>
       <div className='max-w-md'>
-        <div className='flex flex-col mt-32 mx-4'>
+        <div className='flex flex-col mt-28 mx-4'>
           <div 
-          className='flex flex-row gap-12 justify-between items-center'>
+          className='flex flex-row gap-4 justify-between items-center'>
             <div className='flex flex-col'>
               <div className='max-w-xs'>
-                <h1 className='text-5xl text-left font-bold text-base-content'
+                <h1 className='text-4xl text-left font-bold text-base-content'
                 >Hello 👋</h1>
 
                 <p className='text-lg font-base text-left mt-5 text-base-content'
-                >I build user interfaces and full-stack web applications</p>
+                >I build user interfaces and full stack web applications</p>
               </div>
             </div>
 
@@ -49,14 +50,22 @@ const Home = () => {
 
         <div
         className='flex items-center justify-center'>
-          <lottie-player
-          src="https://lottie.host/37cf5e61-b065-4216-aba4-59c520754b4d/ZnsvbDRGJ0.json"
-          background="transparent"
-          speed="1"
-          style={{ width: '400px', height: '400px' }}
-          loop
-          autoplay
-          ></lottie-player>
+          <div className='flex-col'>
+            <lottie-player
+            src="https://lottie.host/37cf5e61-b065-4216-aba4-59c520754b4d/ZnsvbDRGJ0.json"
+            background="transparent"
+            speed="1.5"
+            style={{ width: '350px', height: '350px' }}
+            loop
+            autoplay
+            ></lottie-player>
+
+            <div className='flex items-center justify-center'>
+              <button
+              className='btn btn-neutral'
+              >projects <FaAngleDoubleDown /></button>
+          </div>
+          </div>
         </div>
       </div>
     </div>
