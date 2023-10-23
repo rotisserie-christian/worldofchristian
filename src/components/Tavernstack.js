@@ -38,10 +38,11 @@ const Tavernstack = () => {
           fields within the modal are populated and can then be modified. A div with a slightly darkened background is placed underneath the modal
           in order to focus the user's attention onto the content.</p>
 
-          <div className="mockup-code my-12">
-            <pre data-prefix="$"><code></code></pre> 
-            <pre data-prefix=">" className="text-warning"><code>installing...</code></pre> 
-            <pre data-prefix=">" className="text-success"><code>Done!</code></pre>
+          <div className='flex items-center justify-center my-12'>
+            <div className="mockup-code">
+              <pre className='text-xs text-info'><code>{'<div'}</code></pre><pre className='text-xs text-success'><code>{'className'}</code></pre><pre className='text-xs'><code>{'="fixed inset-0 bg-black opacity-50 z-40"></div>'}</code></pre>
+              <pre className='text-xs text-info'><code>{'    '}{'<div'}</code></pre><pre className='text-xs text-success'><code>{'    '}{'className'}</code></pre><pre className='text-xs'><code>{'    '}{'=className="bg-white p-8 rounded-xl shadow-lg w-96"></div>'}</code></pre>
+            </div>
           </div>
 
           <p className='text-base font-base text-left mt-5 text-base-content'
