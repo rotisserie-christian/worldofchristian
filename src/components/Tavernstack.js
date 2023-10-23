@@ -2,11 +2,10 @@ import React from 'react';
 import { useEffect } from 'react';
 
 const Tavernstack = () => {
-    useEffect(() => {
-        // Scroll to halfway down the page
-        const scrollPosition = window.innerHeight / 2;
-        window.scrollTo(0, scrollPosition);
-    }, []);
+  // load to the top of the page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
       
   return (
     <>
