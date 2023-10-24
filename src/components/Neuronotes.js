@@ -39,10 +39,10 @@ const Neuronotes = () => {
               <div className="mockup-code">
                 <pre className='text-xs text-purple-500'><code>{'{'}</code></pre>
 
-                <pre className='text-xs text-blue-300'><code>{'    '}{'id:'}
+                <pre className='text-xs text-blue-300'><code>{'  '}{'id:'}
                 <span className='text-orange-400'>{' '}{'"LGN"'}</span></code></pre>
 
-                <pre className='text-xs text-blue-300'><code>{'    '}{'position:'}
+                <pre className='text-xs text-blue-300'><code>{'  '}{'position:'}
                 <span className='text-blue-500'>{' '}{'{'}</span>
                 <span className='text-blue-400'>{' '}{'x:'}</span>
                 <span className='text-teal-400'>{' '}{'175,'}</span>
@@ -52,14 +52,14 @@ const Neuronotes = () => {
                 <span className='text-blue-500'>{' '}{'}'}</span>
                 <span className='text-white'>{','}</span></code></pre>
 
-                <pre className='text-xs text-blue-300'><code>{'    '}{'data:'}
+                <pre className='text-xs text-blue-300'><code>{'  '}{'data:'}
                 <span className='text-blue-500'>{' '}{'{'}</span>
                 <span className='text-blue-400'>{' '}{'label:'}</span>
                 <span className='text-orange-400'>{' '}{'"LGN (Lateral Geniculate Nucleus)"'}</span>
                 <span className='text-blue-500'>{' '}{'}'}</span>
                 <span className='text-white'>{','}</span></code></pre>
 
-                <pre className='text-xs text-blue-300'><code>{'    '}{'draggable:'}
+                <pre className='text-xs text-blue-300'><code>{'  '}{'draggable:'}
                 <span className='text-blue-500'>{' '}{'False'}</span></code></pre>
 
                 <pre className='text-xs text-purple-500'><code>{'}'}</code></pre>
