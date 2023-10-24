@@ -32,7 +32,7 @@ const Tavernstack = () => {
 
           <p className='text-base font-base text-left mt-5 text-base-content'
           >These items are stored as documents in a FirestoreDB collection, each containing values such as name and price, 
-          as well as booleans like 'spicy' and 'vegan'. They also contain values for which category and subcategory the item belongs to. 
+          as well as booleans like 'spicy'. They also contain values for which category and subcategory the item belongs to. 
           The app sorts the items into their respective categories, and the user edits these categories by changing the values assosiated 
           with the item.
           </p>
