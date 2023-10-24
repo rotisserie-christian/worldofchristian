@@ -35,7 +35,7 @@ const Neuronotes = () => {
           </p>
 
           <div className='flex items-center justify-center my-12'>
-            <div className='max-w-md'>
+            <div className='max-w-sm'>
               <div className="mockup-code">
                 <pre className='text-xs text-purple-500'><code>{'{'}</code></pre>
 
@@ -55,7 +55,7 @@ const Neuronotes = () => {
                 <pre className='text-xs text-blue-300'><code>{'  '}{'data:'}
                 <span className='text-blue-500'>{' '}{'{'}</span>
                 <span className='text-blue-400'>{' '}{'label:'}</span>
-                <span className='text-orange-400'>{' '}{'"LGN (Lateral Geniculate Nucleus)"'}</span>
+                <span className='text-orange-400'>{' '}{'"Lateral Geniculate Nucleus"'}</span>
                 <span className='text-blue-500'>{' '}{'}'}</span>
                 <span className='text-white'>{','}</span></code></pre>
 
@@ -89,7 +89,7 @@ const Neuronotes = () => {
           </p>
 
           <div className='flex items-center justify-center my-12'>
-            <div className='max-w-md'>
+            <div className='max-w-sm'>
               <div className="mockup-code">
                 <pre className='text-xs text-blue-400'><code>
                 <span className='text-xs text-slate-400'>{'<'}</span>{'div'}</code></pre>
@@ -133,7 +133,7 @@ const Neuronotes = () => {
           </p>
 
           <div className='flex items-center justify-center my-12'>
-            <div className='max-w-md'>
+            <div className='max-w-sm'>
               <div className="mockup-code">
                 <pre className='text-xs text-blue-300'><code>{'onClick'}
                 <span className='text-xs text-white'>{'='}</span>

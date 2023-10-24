@@ -7,7 +7,6 @@ import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
 import screen from '../img/screen.png';
 import screenneronotes from '../img/screenneuronotes.png';
-import screencheetahmode from '../img/screencheetahmode.png'
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -90,10 +89,11 @@ const Home = () => {
         <div>
           {/* first two */}
           <div 
-          className='flex item-center justify-center my-8'
-          ref={scrollRef}
-          >
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-40 w-full max-w-5xl'>
+          className='flex item-center justify-center my-12'>
+            <div 
+            className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-40 w-full max-w-5xl'
+            ref={scrollRef}
+            >
               <div 
               className='bg-neutral-focus rounded-xl p-4'>
                 <div 
@@ -212,66 +212,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-
-          {/* third */}
-          <div className='flex items-center justify-center mb-20'>
-            <div className='max-w-md'>
-              <div 
-              className='bg-neutral-focus rounded-xl p-4'>
-                <div 
-                className='flex flex-col items-center justify-center'>
-                  <h2 className='text-4xl font-bold mt-2'
-                  >Cheetahmode</h2>
-
-                  <p className='text-lg font-base text-center mt-4'
-                  >Running pace converter</p>
-                  
-                  <div 
-                  className='flex flex-row mt-4'>
-                    <img
-                    src={screencheetahmode}
-                    alt='app screenshot'
-                    className='max-w-[50%]'
-                    />
-
-                    <div 
-                    className='flex flex-col'>
-                      <div className='flex flex-row'>
-                        <BiLogoReact className='text-2xl mt-12 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left mt-11'
-                        >React</p>
-                      </div>
-
-                      <div className='flex flex-row'>
-                        <BiLogoTailwindCss className='text-2xl mt-6 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left mt-6'
-                        >Tailwind</p>
-                      </div>
-
-                      <a
-                      href='https://cheetahmode.netlify.app'
-                      alt='link to cheetahmode'
-                      target='_blank'
-                      rel="noreferrer"
-                      >
-                        <button
-                        className='btn btn-neutral mt-28'
-                        >live site <FaAngleDoubleRight /></button>
-                      </a>
-
-                      <Link to='/cheetahmode'>
-                        <button
-                        className='btn btn-neutral mt-2'
-                        >read more <FaAngleDoubleRight /></button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              
         </div>
       </div>
     </div>
