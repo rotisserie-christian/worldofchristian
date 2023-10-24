@@ -45,7 +45,7 @@ const Neuronotes = () => {
                 <pre className='text-xs text-blue-300'><code>{'  '}{'position:'}
                 <span className='text-blue-500'>{' '}{'{'}</span>
                 <span className='text-blue-400'>{' '}{'x:'}</span>
-                <span className='text-teal-400'>{' '}{'175,'}</span>
+                <span className='text-teal-400'>{' '}{'175'}</span>
                 <span className='text-white'>{','}</span>
                 <span className='text-blue-400'>{' '}{'y:'}</span>
                 <span className='text-teal-400'>{' '}{'300'}</span>
