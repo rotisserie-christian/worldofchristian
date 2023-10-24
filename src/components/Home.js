@@ -89,11 +89,11 @@ const Home = () => {
         <div>
           {/* first two */}
           <div 
-          className='flex item-center justify-center my-12'>
+          className='flex item-center justify-center my-12'
+          ref={scrollRef}
+          >
             <div 
-            className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-40 w-full max-w-5xl'
-            ref={scrollRef}
-            >
+            className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 w-full max-w-5xl'>
               <div 
               className='bg-neutral-focus rounded-xl p-4'>
                 <div 
