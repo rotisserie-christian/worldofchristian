@@ -15,7 +15,7 @@ const Tavernstack = () => {
     <div className='flex items-center justify-center mt-16'>
       <div className='max-w-5xl'>
         <div
-        className='flex-col my-12 p-2'>
+        className='flex-col my-12 p-2 mx-2'>
           <h1 className='text-5xl text-center font-bold text-base-content'
           >Tavernstack</h1>
 
