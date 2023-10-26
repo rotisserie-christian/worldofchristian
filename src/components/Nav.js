@@ -30,6 +30,7 @@ const Nav = () => {
           className='btn btn-accent mr-4'
           onClick={() => {
             setIsOpen(true);
+            window.scrollTo(0, 0);
           }}
           >contact</button>
       </div>
@@ -40,6 +41,17 @@ const Nav = () => {
         <div className='flex flex-col mt-32'>
           <div className='max-w-sm'>
             <div className='flex flex-col'>
+              <p className='text-md mb-1 ml-1'
+              >Email</p>
+
+              <input 
+              className='input input-bordered'
+              placeholder='Type here'
+              />
+
+              <p className='text-md mb-1 ml-1 mt-4'
+              >Message</p>
+
               <textarea
               className='textarea textarea-bordered' 
               placeholder='Type here'
