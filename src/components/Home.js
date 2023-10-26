@@ -5,6 +5,7 @@ import Nav from './Nav';
 import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
+import { FaNodeJs } from 'react-icons/fa';
 import screen from '../img/screen.png';
 import screenneronotes from '../img/screenneuronotes.png';
 
@@ -126,6 +127,13 @@ const Home = () => {
                         
                         <p className='text-lg font-base text-left mt-5'
                         >Tailwind</p>
+                      </div>
+
+                      <div className='flex flex-row'>
+                        <FaNodeJs className='text-2xl mt-5 mr-2'/>
+                        
+                        <p className='text-lg font-base text-left mt-5'
+                        >Node</p>
                       </div>
 
                       <div className='flex flex-row'>
