@@ -30,6 +30,7 @@ const Nav = () => {
           className='btn btn-accent mr-4'
           onClick={() => {
             setIsOpen(true);
+            window.scrollTo(0,0);
           }}
           >contact</button>
       </div>

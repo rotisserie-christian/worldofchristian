@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FaAngleDoubleRight, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaAngleRight, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Nav from './Nav';
 import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
@@ -33,8 +33,8 @@ const Home = () => {
                     <h1 className='text-4xl text-left font-bold text-base-content'
                     >Hello 👋</h1>
 
-                    <p className='text-lg font-base text-left mt-5 text-base-content'
-                    >I build user interfaces and full stack web applications</p>
+                    <p className='text-lg font-base text-left mt-2 text-base-content'
+                    >I build full stack web applications</p>
                   </div>
                 </div>
 
@@ -64,17 +64,50 @@ const Home = () => {
           </div>
         </div>
 
-        <div
-        className='flex items-center justify-center'>
-          <div className='flex-col'>
+        <div className='flex-col'>
+          <div className='flex items-center justify-center'>
             <lottie-player
             src="https://lottie.host/37cf5e61-b065-4216-aba4-59c520754b4d/ZnsvbDRGJ0.json"
             background="transparent"
             speed="1.5"
-            style={{ width: '350px', height: '350px' }}
+            style={{ width: '250px', height: '250px' }}
             loop
             autoplay
             ></lottie-player>
+          </div>
+        </div>
+
+        <div className='max-w-md'>
+          <div 
+          className='bg-neutral-focus rounded-xl p-4 my-4'>
+            <div 
+            className='flex flex-col items-center justify-center'>
+              <p className='text-2xl font-bold'>
+              Highlights</p>
+
+              <div className='flex flex-row mt-2'>
+                <FaAngleRight className='text-xl mr-1 mt-1' />
+
+                <p className='text-lg'
+                >Test-driven development - Jest</p>
+              </div>
+
+              <div className='flex flex-row mt-2'>
+                <FaAngleRight className='text-xl mr-1 mt-1' />
+
+                <p className='text-lg'
+                >Centralized state managment - Redux</p>
+              </div>
+
+              <div className='flex flex-row mt-2'>
+                <FaAngleRight className='text-xl mr-1 mt-1' />
+
+                <p className='text-lg'
+                >Continuous deployment - Git/Netlify</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
             <div className='flex items-center justify-center mb-40'>
               <button
@@ -214,8 +247,6 @@ const Home = () => {
           </div>
               
         </div>
-      </div>
-    </div>
     </>
   );
 };
