@@ -6,7 +6,6 @@ import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si'
 
 const Home = () => {
   const scrollRef = useRef(null);
