@@ -6,6 +6,7 @@ import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si'
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -98,7 +99,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='flex items-center justify-center mt-12 mb-40'>
+        <div className='flex items-center justify-center mt-12'>
           <button
           className='btn btn-neutral'
           onClick={handleBtnClick}
@@ -113,7 +114,7 @@ const Home = () => {
         ref={scrollRef}
         >
           <div 
-          className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl'>
+          className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-[30%] max-w-5xl'>
             <div 
             className='bg-neutral-focus rounded-xl p-6'>
               <div 
@@ -225,122 +226,6 @@ const Home = () => {
                         className='btn btn-neutral mt-2'
                         >read more <FaAngleDoubleRight /></button>
                       </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div 
-            className='bg-neutral-focus rounded-xl p-6'>
-              <div 
-              className='flex flex-col items-center justify-center'>
-                <h2 className='text-4xl font-bold mt-2'
-                >Neuronotes</h2>
-
-                <p className='text-lg font-base text-center mt-4'
-                >Learning resource for psychology & neuroscience</p>
-                
-                <div className='flex flex-row mt-12 gap-8'>
-                  <div className='flex-col'>
-                    <div className='flex flex-row'>
-                      <BiLogoReact className='text-2xl mt-1 mr-2'/>
-                      
-                      <p className='text-lg font-base text-left'
-                      >React</p>
-                    </div>
-
-                    <div className='flex flex-row'>
-                      <BiLogoTailwindCss className='text-2xl mt-6 mr-2'/>
-                      
-                      <p className='text-lg font-base text-left mt-6'
-                      >Tailwind</p>
-                    </div>
-                  </div>
-
-                  <div className='flex flex-col'>
-                    <a
-                      href='https://neuronotes.netlify.app'
-                      alt='link to neuronotes'
-                      target='_blank'
-                      rel="noreferrer"
-                      >
-                        <button
-                        className='btn btn-neutral w-full'
-                        >live site <FaAngleDoubleRight /></button>
-                      </a>
-
-                      <Link to='/neuronotes'>
-                        <button
-                        className='btn btn-neutral mt-2'
-                        >read more <FaAngleDoubleRight /></button>
-                      </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div 
-            className='bg-neutral-focus rounded-xl p-6'>
-              <div 
-              className='flex flex-col items-center justify-center'>
-                <h2 className='text-4xl font-bold mt-2'
-                >SalesGek</h2>
-
-                <p className='text-lg font-base text-center mt-4'
-                >E-commerce starter template</p>
-                
-                <div 
-                className='flex flex-row mt-12'>
-                  <div className='flex flex-row gap-8'>
-                    <div 
-                    className='flex flex-col'>
-                      <div className='flex flex-row'>
-                        <BiLogoReact className='text-2xl mt-1 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left'
-                        >Next/React</p>
-                      </div>
-
-                      <div className='flex flex-row'>
-                        <BiLogoTailwindCss className='text-2xl mt-5 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left mt-5'
-                        >Tailwind</p>
-                      </div>
-
-                      <div className='flex flex-row'>
-                        <FaNodeJs className='text-2xl mt-5 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left mt-5'
-                        >Node</p>
-                      </div>
-
-                      <div className='flex flex-row'>
-                        <BiLogoFirebase className='text-2xl mt-5 mr-2'/>
-                        
-                        <p className='text-lg font-base text-left mt-5'
-                        >Firebase</p>
-                      </div>
-                    </div>
-
-                    <div className='flex flex-col'>
-                      <a
-                        href='https://demo.tavernstack.com'
-                        alt='link to demo'
-                        target='_blank'
-                        rel="noreferrer"
-                        >
-                          <button
-                          className='btn w-full btn-neutral'
-                          >view repo <FaAngleDoubleRight /></button>
-                        </a>
-                        
-                        <Link to='/tavernstack'>
-                          <button
-                          className='btn btn-neutral mt-2'
-                          >read more <FaAngleDoubleRight /></button>
-                        </Link>
-                    </div>
                   </div>
                 </div>
               </div>

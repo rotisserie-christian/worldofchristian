@@ -30,15 +30,14 @@ const Nav = () => {
           className='btn btn-accent mr-4'
           onClick={() => {
             setIsOpen(true);
-            window.scrollTo(0, 0);
           }}
           >contact</button>
       </div>
     </nav>
 
-    { isOpen === true && (
-      <div className='flex items-center justify-center'>
-        <div className='flex flex-col mt-32'>
+    { isOpen && (
+      <div className='fixed top-16 left-0 right-0 flex items-center justify-center z-10 bg-base-100 shadow-lg'>
+        <div className='flex flex-col mt-12'>
           <div className='max-w-sm'>
             <div className='flex flex-col'>
               <p className='text-md mb-1 ml-1'
@@ -62,7 +61,7 @@ const Nav = () => {
               >send</button>
             </div>
 
-            <div className='flex items-center justify-center mt-12'>
+            <div className='flex items-center justify-center my-12'>
               <p className='text-xl font-bold cursor-pointer tracking-wide'
               onClick={() => {
                 setIsOpen(false);
