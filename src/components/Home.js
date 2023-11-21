@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FaAngleDoubleRight, FaAngleRight, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaCheck, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Nav from './Nav';
 import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
@@ -70,29 +70,29 @@ const Home = () => {
             src="https://lottie.host/37cf5e61-b065-4216-aba4-59c520754b4d/ZnsvbDRGJ0.json"
             background="transparent"
             speed="1.5"
-            style={{ width: '300px', height: '300px' }}
+            style={{ width: '275px', height: '275px' }}
             loop
             autoplay
             ></lottie-player>
 
             <div className='flex flex-row'>
-              <FaAngleRight className='text-xl mr-1 mt-1' />
+              <FaCheck className='text-sm mr-2 mt-1' />
 
-              <p className='text-lg'
+              <p className='text-md'
               >Test-driven development - Jest</p>
             </div>
 
             <div className='flex flex-row mt-2'>
-              <FaAngleRight className='text-xl mr-1 mt-1' />
+              <FaCheck className='text-sm mr-2 mt-1' />
 
-              <p className='text-lg'
+              <p className='text-md'
               >Centralized state managment - Redux</p>
             </div>
 
             <div className='flex flex-row mt-2'>
-              <FaAngleRight className='text-xl mr-1 mt-1' />
+              <FaCheck className='text-sm mr-2 mt-1' />
 
-              <p className='text-lg'
+              <p className='text-md'
               >Continuous deployment - Git/Netlify</p>
             </div>
           </div>
@@ -109,13 +109,13 @@ const Home = () => {
       {/* projects */}
       <div>
         <div 
-        className='flex item-center justify-center mt-40 mb-12'
+        className='flex item-center justify-center mb-12'
         ref={scrollRef}
         >
           <div 
-          className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 w-full max-w-5xl'>
+          className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl'>
             <div 
-            className='bg-neutral-focus rounded-xl p-4'>
+            className='bg-neutral-focus rounded-xl p-6'>
               <div 
               className='flex flex-col items-center justify-center'>
                 <h2 className='text-4xl font-bold mt-2'
@@ -125,15 +125,15 @@ const Home = () => {
                 >Website managment app for bars</p>
                 
                 <div 
-                className='flex flex-row mt-4 mb-8'>
+                className='flex flex-row mt-12'>
                   <div className='flex flex-row gap-8'>
                     <div 
                     className='flex flex-col'>
                       <div className='flex flex-row'>
-                        <BiLogoReact className='text-2xl mt-12 mr-2'/>
+                        <BiLogoReact className='text-2xl mt-1 mr-2'/>
                         
-                        <p className='text-lg font-base text-left mt-11'
-                        >React</p>
+                        <p className='text-lg font-base text-left'
+                        >Next/React</p>
                       </div>
 
                       <div className='flex flex-row'>
@@ -166,7 +166,7 @@ const Home = () => {
                         rel="noreferrer"
                         >
                           <button
-                          className='btn btn-neutral mt-20'
+                          className='btn w-full btn-neutral'
                           >live demo <FaAngleDoubleRight /></button>
                         </a>
                         
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
 
             <div 
-            className='bg-neutral-focus rounded-xl p-4'>
+            className='bg-neutral-focus rounded-xl p-6'>
               <div 
               className='flex flex-col items-center justify-center'>
                 <h2 className='text-4xl font-bold mt-2'
@@ -191,13 +191,12 @@ const Home = () => {
                 <p className='text-lg font-base text-center mt-4'
                 >Learning resource for psychology & neuroscience</p>
                 
-                <div className='flex flex-row mt-4 mb-8 gap-8'>
-                  
+                <div className='flex flex-row mt-12 gap-8'>
                   <div className='flex-col'>
                     <div className='flex flex-row'>
-                      <BiLogoReact className='text-2xl mt-12 mr-2'/>
+                      <BiLogoReact className='text-2xl mt-1 mr-2'/>
                       
-                      <p className='text-lg font-base text-left mt-11'
+                      <p className='text-lg font-base text-left'
                       >React</p>
                     </div>
 
@@ -217,7 +216,7 @@ const Home = () => {
                       rel="noreferrer"
                       >
                         <button
-                        className='btn btn-neutral mt-10'
+                        className='btn btn-neutral w-full'
                         >live site <FaAngleDoubleRight /></button>
                       </a>
 
@@ -228,7 +227,122 @@ const Home = () => {
                       </Link>
                   </div>
                 </div>
+              </div>
+            </div>
 
+            <div 
+            className='bg-neutral-focus rounded-xl p-6'>
+              <div 
+              className='flex flex-col items-center justify-center'>
+                <h2 className='text-4xl font-bold mt-2'
+                >Neuronotes</h2>
+
+                <p className='text-lg font-base text-center mt-4'
+                >Learning resource for psychology & neuroscience</p>
+                
+                <div className='flex flex-row mt-12 gap-8'>
+                  <div className='flex-col'>
+                    <div className='flex flex-row'>
+                      <BiLogoReact className='text-2xl mt-1 mr-2'/>
+                      
+                      <p className='text-lg font-base text-left'
+                      >React</p>
+                    </div>
+
+                    <div className='flex flex-row'>
+                      <BiLogoTailwindCss className='text-2xl mt-6 mr-2'/>
+                      
+                      <p className='text-lg font-base text-left mt-6'
+                      >Tailwind</p>
+                    </div>
+                  </div>
+
+                  <div className='flex flex-col'>
+                    <a
+                      href='https://neuronotes.netlify.app'
+                      alt='link to neuronotes'
+                      target='_blank'
+                      rel="noreferrer"
+                      >
+                        <button
+                        className='btn btn-neutral w-full'
+                        >live site <FaAngleDoubleRight /></button>
+                      </a>
+
+                      <Link to='/neuronotes'>
+                        <button
+                        className='btn btn-neutral mt-2'
+                        >read more <FaAngleDoubleRight /></button>
+                      </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div 
+            className='bg-neutral-focus rounded-xl p-6'>
+              <div 
+              className='flex flex-col items-center justify-center'>
+                <h2 className='text-4xl font-bold mt-2'
+                >SalesGek</h2>
+
+                <p className='text-lg font-base text-center mt-4'
+                >E-commerce starter template</p>
+                
+                <div 
+                className='flex flex-row mt-12'>
+                  <div className='flex flex-row gap-8'>
+                    <div 
+                    className='flex flex-col'>
+                      <div className='flex flex-row'>
+                        <BiLogoReact className='text-2xl mt-1 mr-2'/>
+                        
+                        <p className='text-lg font-base text-left'
+                        >Next/React</p>
+                      </div>
+
+                      <div className='flex flex-row'>
+                        <BiLogoTailwindCss className='text-2xl mt-5 mr-2'/>
+                        
+                        <p className='text-lg font-base text-left mt-5'
+                        >Tailwind</p>
+                      </div>
+
+                      <div className='flex flex-row'>
+                        <FaNodeJs className='text-2xl mt-5 mr-2'/>
+                        
+                        <p className='text-lg font-base text-left mt-5'
+                        >Node</p>
+                      </div>
+
+                      <div className='flex flex-row'>
+                        <BiLogoFirebase className='text-2xl mt-5 mr-2'/>
+                        
+                        <p className='text-lg font-base text-left mt-5'
+                        >Firebase</p>
+                      </div>
+                    </div>
+
+                    <div className='flex flex-col'>
+                      <a
+                        href='https://demo.tavernstack.com'
+                        alt='link to demo'
+                        target='_blank'
+                        rel="noreferrer"
+                        >
+                          <button
+                          className='btn w-full btn-neutral'
+                          >view repo <FaAngleDoubleRight /></button>
+                        </a>
+                        
+                        <Link to='/tavernstack'>
+                          <button
+                          className='btn btn-neutral mt-2'
+                          >read more <FaAngleDoubleRight /></button>
+                        </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
