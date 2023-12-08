@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FaAngleDoubleRight, FaCheck, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Nav from './Nav';
 import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
@@ -70,35 +70,14 @@ const Home = () => {
             src="https://lottie.host/37cf5e61-b065-4216-aba4-59c520754b4d/ZnsvbDRGJ0.json"
             background="transparent"
             speed="1.5"
-            style={{ width: '275px', height: '275px' }}
+            style={{ width: '320px', height: '320px' }}
             loop
             autoplay
             ></lottie-player>
-
-            <div className='flex flex-row'>
-              <FaCheck className='text-sm mr-2 mt-1' />
-
-              <p className='text-md'
-              >Test-driven development - Jest</p>
-            </div>
-
-            <div className='flex flex-row mt-2'>
-              <FaCheck className='text-sm mr-2 mt-1' />
-
-              <p className='text-md'
-              >Centralized state managment - Redux</p>
-            </div>
-
-            <div className='flex flex-row mt-2'>
-              <FaCheck className='text-sm mr-2 mt-1' />
-
-              <p className='text-md'
-              >Continuous deployment - Git/Netlify</p>
-            </div>
           </div>
         </div>
 
-        <div className='flex items-center justify-center mt-12'>
+        <div className='flex items-center justify-center mt-5'>
           <button
           className='btn btn-neutral'
           onClick={handleBtnClick}
@@ -122,7 +101,7 @@ const Home = () => {
                 >Tavernstack</h2>
 
                 <p className='text-lg font-base text-center mt-4'
-                >Website managment app for bars</p>
+                >Digital menu platform for bars</p>
                 
                 <div 
                 className='flex flex-row mt-12'>
@@ -133,7 +112,7 @@ const Home = () => {
                         <BiLogoReact className='text-2xl mt-1 mr-2'/>
                         
                         <p className='text-lg font-base text-left'
-                        >Next/React</p>
+                        >React</p>
                       </div>
 
                       <div className='flex flex-row'>
