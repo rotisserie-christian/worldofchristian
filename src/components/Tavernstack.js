@@ -61,7 +61,7 @@ const Tavernstack = () => {
             The idea of 'build once deploy everywhere' was a significant factor in the decision to use React.<br /><br />
 
             Had this not been the case, I would have chosen Svelte. The ability to access state across the application, 
-            without relying on something like Redux, would have greatly reduced the complexity of my code.
+            without relying on something like Redux, would have made it far easier to build and maintain the front-end.
             </p>
 
             <h2 className='text-2xl font-bold mt-12'
@@ -89,7 +89,7 @@ const Tavernstack = () => {
 
             <p className='text-base font-base text-left mt-5 text-base-content'
             >This is an example of how I would style a background when a modal is active. It contains 
-            roughly a third of the characters that would be neccesary with traditonal CSS.<br /><br />
+            roughly one third of the characters that would be neccesary with traditonal CSS.<br /><br />
 
             Using DaisyUI with Tailwind allows for the same uniformity found in something like MaterialUI, 
             but with more flexability. It makes it easy to combine library components with those built from scratch.
@@ -158,7 +158,7 @@ const Tavernstack = () => {
             >This represents a typical item that would be stored in a FirestoreDB collection. The menu comprises 
             the bulk of the user data and typically remains relatively constant in size.<br /><br />
 
-            Given that Firebase charges per read/write, vertically scaling projects can potentially become 
+            Given that Firebase charges per read/write, vertically scaled projects can potentially become 
             less profitable over time. However, since complex queries are not needed, the convenience of Firebase 
             outweighs it's limitations in this use case.
             </p>
