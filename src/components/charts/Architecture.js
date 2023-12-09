@@ -1,49 +1,57 @@
 import React from 'react';
 import ReactFlow, { Background } from 'reactflow';
 import 'reactflow/dist/style.css';
+import './CustomNode.css'
 
 const initialNodes = [
     {
         id: 'main',
         position: { x: 50, y: 100 },
-        data: { label: 'Main website: Landing page & traffic generating content' },
-        draggable: false
+        data: { label: 'Main website: Landing page & content' },
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'app',
         position: { x: 50, y: 250 },
         data: { label: 'Main app: CRUD features that allow users to make changes' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'demo',
         position: { x: 250, y: 250 },
         data: { label: 'Demo app: Modified to demonstrate UX, entirely client-side' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'node',
-        position: { x: 50, y: 375 },
+        position: { x: 50, y: 390 },
         data: { label: 'Node: Server functions' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'firebase',
         position: { x: 50, y: 500 },
         data: { label: 'Firebase: Data storage & Authentication' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'menu',
         position: { x: 50, y: 625 },
         data: { label: 'Bar menus: Displays menu data in read-only format' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
     {
         id: 'api',
         position: { x: 250, y: 500 },
         data: { label: 'APIs: Stripe integration & analytics' },
-        draggable: false
+        draggable: false,
+        className: 'darkNodeStyle'
     },
 ];
 

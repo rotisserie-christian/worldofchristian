@@ -7,7 +7,6 @@ import Architecture from './charts/Architecture';
 import TimestampMockup from './TimestampMockup';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import UnsavedChangesMockup from './UnsavedChangesMockup';
 
 const Tavernstack = () => {
   const [showArchitecture, setShowArchitecture] = useState(false);
@@ -156,10 +155,6 @@ const Tavernstack = () => {
               >However if the data does change frequently, and isn't accessed often, the savings would 
               be negligible. If this disparity is large enough, the timestamp check may even produce a 
               marginal cost.</p>
-
-              <div className='flex items-center justify-center my-12'>
-                <UnsavedChangesMockup />
-              </div>
               
               <p className='text-base font-base text-left mt-5 text-base-content'
               >For bars, menu overhauls may require a lot of writes, but they happen infrequently. Daily reads 

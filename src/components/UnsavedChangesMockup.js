@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAngleRight, FaCheck, FaPencilAlt, FaRegPlayCircle, FaTrash } from 'react-icons/fa';
+import { FaAngleRight, FaPencilAlt, FaTrash } from 'react-icons/fa';
 
 const UnsavedChangesMockup = () => {
   return (
