@@ -1,12 +1,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Nav from './Nav';
-import FirebaseCode from '../components/code-windows/FirebaseCode';
 import TailwindCode from './code-windows/TailwindCode';
 import Architecture from './charts/Architecture';
 import TimestampMockup from './TimestampMockup';
+import TradCss from './code-windows/TradCss';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Abstraction from './code-windows/Abstraction';
+import MediaQ from './code-windows/MediaQ';
 
 const Tavernstack = () => {
   const [showArchitecture, setShowArchitecture] = useState(false);
@@ -17,6 +19,8 @@ const Tavernstack = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  //comment
       
   return (
     <>
@@ -56,14 +60,25 @@ const Tavernstack = () => {
             <div>
               <p className='text-base font-base text-left mt-5 text-base-content'
               >Tailwind's utility classes greatly reduce the amount of styling that 
-              needs to be written, which enables rapid design ideation.
+              needs to be written and encapsulates many best practices.
               </p>
 
               <TailwindCode />
 
               <p className='text-base font-base text-left mt-5 text-base-content'
               >This is an example of how I would style a background when a modal is active. It contains 
-              roughly one third of the characters that would be neccesary with traditonal CSS.</p>
+              roughly half of the characters that would be neccesary with traditonal CSS.</p>
+
+              <TradCss />
+
+              <p className='text-base font-base text-left mt-5 text-base-content'
+              >It also abstracts away certain responsive design features. Classes can be prefixed with
+              various viewport breakpoints, eliminating the need to write a media query.
+              </p>
+
+              <Abstraction />
+
+              <MediaQ />
             </div>
           )}
 
@@ -93,29 +108,14 @@ const Tavernstack = () => {
             >This platform is a collection of web apps built using JAMstack methodology. 
             Each Git repo has a CI/CD pipeline that deploys on Netlify.<br /><br />
             
-            Netlify deploys server code on an edge network, where the functions run on-demand. This is highly efficient 
-            because my Node functions are simple and likely to remain as such well into the future.
+            Netlify hosts the client side on a global CDN and the server side on an edge network. This is 
+            highly efficient, as my Node functions are simple event-driven requests that do not require 
+            any extensive use of hardware.
             </p>
 
             <div className='flex items-center justify-center my-12'>
             <Architecture />
             </div>
-
-            <p className='text-base font-base text-left mt-5 text-base-content'
-            >Because the data structure I'm working with is not particularly complicated, 
-            growth scales horizontally.<br /><br />
-
-            This represents a typical item that would be stored in a FirestoreDB collection. The menu comprises 
-            the bulk of the user data and typically remains relatively constant in size.
-            </p>
-
-            <FirebaseCode />
-
-            <p className='text-base font-base text-left text-base-content'
-            >Because Firebase charges per read/write, complex queries can get expensive. Rather than vertically 
-            expanding user data, this project is intended to grow by increasing total users and adding more client-side
-            features. In this context, the convenience of Firebase outweighs it's limitations.
-            </p>
           </div>
           )}
 
