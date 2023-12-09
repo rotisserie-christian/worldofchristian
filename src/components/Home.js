@@ -143,7 +143,7 @@ const Home = () => {
             </div>
 
             <div className='bg-neutral-focus rounded-xl p-8'>                            
-              <div className='flex flex-row justify-between gap-28'>
+              <div className='flex flex-row justify-between gap-8'>
                 <div className='flex flex-col justify-center text-right'>
                   <h2 className='text-4xl font-bold text-right mt-2'
                   >Neuronotes</h2>
