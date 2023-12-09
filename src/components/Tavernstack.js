@@ -7,6 +7,7 @@ import Architecture from './charts/Architecture';
 import TimestampMockup from './TimestampMockup';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import UnsavedChangesMockup from './UnsavedChangesMockup';
 
 const Tavernstack = () => {
   const [showArchitecture, setShowArchitecture] = useState(false);
@@ -64,11 +65,6 @@ const Tavernstack = () => {
               <p className='text-base font-base text-left mt-5 text-base-content'
               >This is an example of how I would style a background when a modal is active. It contains 
               roughly one third of the characters that would be neccesary with traditonal CSS.</p>
-              
-              <p className='text-base font-base text-left mt-5 text-base-content'
-              >Using DaisyUI with Tailwind allows for the same uniformity found in something like MaterialUI, 
-              but with more flexability. It makes it easy to combine library components with those built from scratch.
-              </p>
             </div>
           )}
 
@@ -147,24 +143,29 @@ const Tavernstack = () => {
           {showDatabaseOptimization && (
             <div>
               <p className='text-base font-base text-left mt-5 text-base-content'
-            >A menu can require dozens, or even hundreds of reads for every page load. 
-            If the data doesn't change frequently, a timestamp check can reduce unnecesary reads by 
-            serving the cached data instead.
-            </p>
-            
-            <div className='flex items-center justify-center my-12'>
-              <TimestampMockup />
-            </div>
+              >A menu can require dozens, or even hundreds of reads for every page load. 
+              If the data doesn't change frequently, a timestamp check can reduce unnecesary reads by 
+              serving the cached data instead.
+              </p>
+              
+              <div className='flex items-center justify-center my-12'>
+                <TimestampMockup />
+              </div>
 
-            <p className='text-base font-base text-left mt-5 text-base-content'
-            >However if the data does change frequently, and isn't accessed often, the savings would 
-            be negligible. If this disparity is large enough, the timestamp check may even produce a 
-            marginal cost.<br /><br />
-            
-            For bars, menu overhauls may require a lot of writes, but they happen infrequently. Daily reads 
-            however, can easily number in the thousands. In this case, a timestamp check significantly reduces 
-            database usage.
-            </p>
+              <p className='text-base font-base text-left mt-5 text-base-content'
+              >However if the data does change frequently, and isn't accessed often, the savings would 
+              be negligible. If this disparity is large enough, the timestamp check may even produce a 
+              marginal cost.</p>
+
+              <div className='flex items-center justify-center my-12'>
+                <UnsavedChangesMockup />
+              </div>
+              
+              <p className='text-base font-base text-left mt-5 text-base-content'
+              >For bars, menu overhauls may require a lot of writes, but they happen infrequently. Daily reads 
+              however, can easily number in the thousands. In this case, a timestamp check significantly reduces 
+              database usage.
+              </p>
 
               <div className='flex items-center justify-center'>
                 <div className='flex flex-col'>
