@@ -94,7 +94,7 @@ const Tavernstack = () => {
             Each Git repo has a CI/CD pipeline that deploys on Netlify.<br /><br />
             
             Netlify deploys server code on an edge network, where the functions run on-demand. This is highly efficient 
-            because my Node functions are simple and likely to remain as such well into the future.
+            because my Node functions are simple and are likely to remain as such well into the future.
             </p>
 
             <div className='flex items-center justify-center my-12'>
