@@ -5,6 +5,8 @@ import FirebaseCode from '../components/code-windows/FirebaseCode';
 import TailwindCode from './code-windows/TailwindCode';
 import Architecture from './charts/Architecture';
 import TimestampMockup from './TimestampMockup';
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Tavernstack = () => {
   const [showArchitecture, setShowArchitecture] = useState(false);
@@ -115,9 +117,9 @@ const Tavernstack = () => {
             <FirebaseCode />
 
             <p className='text-base font-base text-left text-base-content'
-            >Given that Firebase charges per read/write, vertically scaled projects can potentially become 
-            less profitable over time. However, since complex queries are not needed, the convenience of Firebase 
-            outweighs it's limitations in this use case.
+            >Because Firebase charges per read/write, complex queries can get expensive. Rather than vertically 
+            expanding user data, this project is intended to grow by increasing total users and adding more client-side
+            features. In this context, the convenience of Firebase outweighs it's limitations.
             </p>
           </div>
           )}
@@ -145,9 +147,9 @@ const Tavernstack = () => {
           {showDatabaseOptimization && (
             <div>
               <p className='text-base font-base text-left mt-5 text-base-content'
-            >Caching data on the client side is a common practice. A menu can require dozens, or 
-            even hundreds of reads for every page load. If the data doesn't change frequently, 
-            a timestamp check can reduce unnecesary reads by serving the cached data instead.
+            >A menu can require dozens, or even hundreds of reads for every page load. 
+            If the data doesn't change frequently, a timestamp check can reduce unnecesary reads by 
+            serving the cached data instead.
             </p>
             
             <div className='flex items-center justify-center my-12'>
@@ -156,13 +158,36 @@ const Tavernstack = () => {
 
             <p className='text-base font-base text-left mt-5 text-base-content'
             >However if the data does change frequently, and isn't accessed often, the savings would 
-            be negligible. If this disparity is large enough, the timestamp check may even produce an 
-            additional, although marginal cost.<br /><br />
+            be negligible. If this disparity is large enough, the timestamp check may even produce a 
+            marginal cost.<br /><br />
             
-            Bars tend to be the former. Menu overhauls may involve hundreds of writes, but are a rare 
-            occurence. Daily reads can easily number in the thousands. In this case, a timestamp check 
-            significantly reduces the total number of reads.
+            For bars, menu overhauls may require a lot of writes, but they happen infrequently. Daily reads 
+            however, can easily number in the thousands. In this case, a timestamp check significantly reduces 
+            database usage.
             </p>
+
+              <div className='flex items-center justify-center'>
+                <div className='flex flex-col'>
+                  <h2 className='text-2xl font-semibold mt-20'
+                  >Done reading?</h2>
+                  
+                  <a
+                  href='https://demo.tavernstack.com'
+                  target='_blank'
+                  rel='noreferrer'
+                  >
+                    <button className='btn btn-accent mt-6 w-full'
+                    >Live demo <FaAngleDoubleRight className='ml-2' />
+                    </button>
+                  </a>
+
+                  <Link to='/'>
+                    <button className='btn btn-neutral mt-2 mb-20 w-full'
+                    ><FaAngleDoubleLeft className='mr-2' />Back home
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           )}
         </div>
