@@ -94,11 +94,11 @@ const Home = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-[30%] max-w-5xl'>
             <div className='bg-neutral-focus rounded-xl p-8'>                            
               <div className='flex flex-row justify-between'>
-                <div className='flex flex-col justify-center text-right'>
-                  <h2 className='text-4xl font-bold text-right mt-2'
+                <div className='flex flex-col justify-center text-left'>
+                  <h2 className='text-4xl font-bold text-left mt-2'
                   >Tavernstack</h2>
 
-                  <p className='text-right mt-4'
+                  <p className='text-left mt-4'
                   >Digital menu platform for bars</p>
 
                   <Link to='/tavernstack'>
@@ -144,11 +144,11 @@ const Home = () => {
 
             <div className='bg-neutral-focus rounded-xl p-8'>                            
               <div className='flex flex-row justify-between gap-28'>
-                <div className='flex flex-col justify-center text-right'>
-                  <h2 className='text-4xl font-bold text-right mt-2'
+                <div className='flex flex-col justify-center text-left'>
+                  <h2 className='text-4xl font-bold text-left mt-2'
                   >Neuronotes</h2>
 
-                  <p className='text-right mt-4'
+                  <p className='text-left mt-4'
                   >Learning resource for psychology & neuroscience</p>
 
                   <Link to='/neuronotes'>
