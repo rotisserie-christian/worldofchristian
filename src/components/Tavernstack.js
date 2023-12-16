@@ -13,7 +13,8 @@ import MediaQ from './code-windows/MediaQ';
 const Tavernstack = () => {
   const [showArchitecture, setShowArchitecture] = useState(false);
   const [showDatabaseOptimization, setShowDatabaseOptimization] = useState(false);
-  const [showUIdev, setShowUIdev] = useState(true);
+  const [showAbout, setShowAbout] = useState(true);
+  const [showUIdev, setShowUIdev] = useState(false);
 
   // load to the top of the page
   useEffect(() => {
@@ -35,6 +36,56 @@ const Tavernstack = () => {
 
           <p className='text-lg font-base text-center mt-5 text-base-content'
           >A digital menu platform for bars</p>
+
+          <button
+          className="flex items-center justify-between w-full bg-base-200 px-4 py-4 rounded-md mt-12"
+          onClick={() => setShowAbout(!showAbout)}
+          >About
+
+          <svg
+          className={`w-6 h-6 transition-transform duration-300 transform ${
+              showUIdev ? 'rotate-90' : 'rotate-0'
+              }`}
+              viewBox="0 0 24 24"
+              fill="currentColor">
+          <path
+          d="M9 5l7 7-7 7"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round" />
+          </svg>
+          </button>
+          
+          {showAbout && (
+            <div>
+              <p className='text-xl font-semibold text-left mt-5 text-base-content'
+              >The problem
+              </p>
+
+              <p className='text-base font-base text-left mt-5 text-base-content'
+              >86% of consumers will look for an online menu before going out. UX research shows that users 
+              tend to leave if it takes more than a few seconds to find what they're looking for.<br /><br />
+
+              An optimized digital menu can translate to a lot of new business. A number of menu builders exist,
+              but they're usually bundled with other tools into an expensive plan.<br /><br />
+
+              This works great for high-volume venues that have a use for all of them, but the smaller places end
+              up getting left out.
+              </p>
+
+              <p className='text-xl font-semibold text-left mt-12 text-base-content'
+              >Solution
+              </p>
+
+              <p className='text-base font-base text-left mt-5 text-base-content'
+              >Tavernstack offers a low cost app-like menu. It can be managed much like a social media profile 
+              and integrates with their existing website.<br /><br />
+
+              It's built to compliment their existing workflow, rather than forcing them to adapt to a new one. 
+              </p>
+            </div>
+          )}
 
           <button
           className="flex items-center justify-between w-full bg-base-200 px-4 py-4 rounded-md mt-12"
@@ -142,9 +193,8 @@ const Tavernstack = () => {
           {showDatabaseOptimization && (
             <div>
               <p className='text-base font-base text-left mt-5 text-base-content'
-              >A menu can require dozens, or even hundreds of reads for every page load. 
-              If the data doesn't change frequently, a timestamp check can reduce unnecesary reads by 
-              serving the cached data instead.
+              >Caching is a good practice, but it's especially important with Firebase because you pay
+              per read/write. Checking if the menu has changed since the last visit can reduce unnecessary reads.
               </p>
               
               <div className='flex items-center justify-center my-12'>
@@ -152,14 +202,15 @@ const Tavernstack = () => {
               </div>
 
               <p className='text-base font-base text-left mt-5 text-base-content'
-              >However if the data does change frequently, and isn't accessed often, the savings would 
+              >However if the data changes frequently, and isn't accessed often, the savings would 
               be negligible. If this disparity is large enough, the timestamp check may even produce a 
               marginal cost.</p>
               
               <p className='text-base font-base text-left mt-5 text-base-content'
               >For bars, menu overhauls may require a lot of writes, but they happen infrequently. Daily reads 
-              however, can easily number in the thousands. In this case, a timestamp check significantly reduces 
-              database usage.
+              however, can easily number in the thousands.<br /><br /> 
+              
+              In this case, a timestamp check significantly reduces database usage.
               </p>
 
               <div className='flex items-center justify-center'>

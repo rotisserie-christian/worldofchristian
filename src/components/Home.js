@@ -6,6 +6,7 @@ import '@lottiefiles/lottie-player';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { BiLogoReact, BiLogoTailwindCss, BiLogoFirebase } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -144,8 +145,8 @@ const Home = () => {
 
             <div className='bg-neutral-focus rounded-xl p-8'>                            
               <div className='flex flex-row justify-between gap-8'>
-                <div className='flex flex-col justify-center text-right'>
-                  <h2 className='text-4xl font-bold text-right mt-2'
+                <div className='flex flex-col justify-center text-left'>
+                  <h2 className='text-4xl font-bold text-left mt-2'
                   >Neuronotes</h2>
 
                   <p className='text-left mt-4'
@@ -172,6 +173,20 @@ const Home = () => {
                     
                     <p className='text-lg font-base text-left mt-5'
                     >Tailwind</p>
+                  </div>
+
+                  <div className='flex flex-row'>
+                    <FaNodeJs className='text-2xl mt-5 mr-2'/>
+                    
+                    <p className='text-lg font-base text-left mt-5'
+                    >Node</p>
+                  </div>
+
+                  <div className='flex flex-row'>
+                    <BiLogoPostgresql className='text-2xl mt-5 mr-2'/>
+                    
+                    <p className='text-lg font-base text-left mt-5'
+                    >PostgreSQL</p>
                   </div>
                 </div> 
 
