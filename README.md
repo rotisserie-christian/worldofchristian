@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-🌟 I build web apps with React, Tailwind, and Firebase
+🌟 I build web apps with React, Tailwind, Node, and PostgreSQL
